@@ -105,9 +105,9 @@ const App: React.FC = () => {
       <header className="flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <h1 className="text-3xl font-black text-white flex items-center gap-2">
-            <span className="text-emerald-500">Euro</span>Elevate
+            Hoogtemeter <span className="text-emerald-500">NAP</span>
           </h1>
-          <p className="text-slate-400 text-sm font-medium">Topografische Verkenner & Hoogtemeter</p>
+          <p className="text-slate-400 text-sm font-medium">Topografische Verkenner</p>
         </div>
         <div className="flex items-center gap-3">
           <div className="flex flex-col items-end">
@@ -194,7 +194,7 @@ const App: React.FC = () => {
       {/* Footer Info */}
       <footer className="mt-auto pt-12 border-t border-slate-900 text-center">
         <p className="text-slate-600 text-[10px] uppercase tracking-widest font-bold">
-          Data powered by OpenTopoMap & Google Gemini 3 Flash • Made for explorers
+          Made by Janfred
         </p>
       </footer>
     </div>

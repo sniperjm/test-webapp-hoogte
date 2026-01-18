@@ -1,6 +1,6 @@
 {
-  "name": "EuroElevate - Topographic Explorer",
-  "description": "A professional altitude and terrain analysis tool for Europe. Uses GPS coordinates to provide precise elevation data and AI-driven geographic insights.",
+  "name": "Hoogtemeter NAP",
+  "description": "Een professionele tool voor hoogte- en terreinanalyse in Europa. Gebruikt GPS-coördinaten voor nauwkeurige hoogtegegevens.",
   "requestFramePermissions": [
     "geolocation"
   ]
