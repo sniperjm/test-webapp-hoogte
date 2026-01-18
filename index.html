@@ -9,11 +9,10 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
-        body { font-family: 'Inter', sans-serif; background-color: #020617; }
+        body { font-family: 'Inter', sans-serif; background-color: #020617; margin: 0; padding: 0; }
         .mono { font-family: 'JetBrains Mono', monospace; }
-        .leaflet-container { height: 100%; width: 100%; z-index: 10; border-radius: 0.75rem; }
+        .leaflet-container { height: 100%; width: 100%; z-index: 10; border-radius: 0.75rem; background: #0f172a; }
     </style>
-    <!-- We laten Leaflet hier staan omdat het via CDN geladen wordt in App.tsx -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script type="importmap">
 {
@@ -31,8 +30,6 @@
 </head>
 <body class="bg-slate-950 text-slate-50 min-h-screen">
     <div id="root"></div>
-    <!-- Gebruik een relatief pad voor de build tool -->
-    <script type="module" src="./index.tsx"></script>
-<script type="module" src="/index.tsx"></script>
+    <script type="module" src="/index.tsx"></script>
 </body>
 </html>
