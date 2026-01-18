@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main, master ] # Werkt nu op beide veelvoorkomende branchnamen
+    branches: [ main, master ]
 
 permissions:
   contents: read
@@ -18,7 +18,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          # We verwijderen 'cache: npm' omdat je geen package-lock.json in je project hebt.
+          # Dit voorkomt de foutmelding: "Dependencies lock file is not found".
       - run: npm install
       - run: npm run build
       - name: Setup Pages
